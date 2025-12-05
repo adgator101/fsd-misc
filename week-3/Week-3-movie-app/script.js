@@ -63,22 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Search for:", searchTerm);
       }
     });
-
-    // Search on Enter key
-    searchInput.addEventListener("keypress", function (e) {
-      if (e.key === "Enter") {
-        searchButton.click();
-      }
-    });
   }
-
-  // Filter functionality placeholder
-  document.querySelectorAll(".filter-select").forEach((select) => {
-    select.addEventListener("change", function () {
-      // Filter logic will go here
-      console.log("Filter changed:", this.value);
-    });
-  });
 });
 
 const API_URL = "http://localhost:3000/movies";
